@@ -2,7 +2,7 @@
 
 main{
    a{
-      @include var.flex(center);
+      @include var.flex(center, initial);
       background: var.$dark-cyan;
       margin-bottom: var.$rem + 0.5;
       padding: var.$rem;
@@ -11,7 +11,16 @@ main{
       font-weight: map-get(var.$weights, bold);
       color: var.$white;
       text-decoration: none;
-   }
-// add an acrtive state to the button
 
-}
+      &:focus {
+         background-color: var.$very-dark-blue;
+      }
+
+      #text {
+padding-left: var.$rem - 0.5;
+      }
+   }
+
+
+   }
+// add an active state to the button

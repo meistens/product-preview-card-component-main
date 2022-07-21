@@ -8,8 +8,16 @@
 }
 
 // flex
-@mixin flex ($justify-content){
+@mixin flex ($align-items, $flex-direction){
   display: flex;
-  align-items: center;
-  justify-content: $justify-content;
+  justify-content: center;
+  align-items: $align-items;
+  flex-direction: $flex-direction;
+}
+
+// media queries
+@mixin largePhone {
+  @media screen and (min-width: var.$large-phones) {
+@content;    
+  }
 }

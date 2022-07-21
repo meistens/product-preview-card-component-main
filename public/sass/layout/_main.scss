@@ -2,11 +2,13 @@
 
 body {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding: var.$rem;
   background-color: var.$cream;
+
+  @include var.largePhone{
+    padding: 0;
+  }
+
 }
 
 main {
@@ -14,10 +16,8 @@ main {
   border-radius: var.$rem;
   overflow: hidden;
 
-  // section picture img {
-  //   max-width: 100%;
-  // }
-  section img{
+  section picture img {
     max-width: 100%;
+    display: block;
   }
 }

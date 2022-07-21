@@ -1,5 +1,23 @@
 @use "../utilities/index" as var;
 
-section.price-grid {
-  @include var.flex(initial);
+
+body{
+  @include var.flex(normal, column);
+  @include var.largePhone {
+align-items: center;
+  }
+}
+section{
+
+&.price-grid {
+  @include var.flex(center, initial);
+  justify-content: initial;
+}
+
+&.grid-body{
+  @include var.largePhone{
+    @include var.flex(initial, column);
+    justify-content: space-around;
+  }
+}
 }

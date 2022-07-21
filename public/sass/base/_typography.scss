@@ -7,8 +7,9 @@ main {
 
       h1 {
         font-family: var.$fraun;
-        font-weight: map-get(var.$weights, semi-bold);
+        font-weight: map-get(var.$weights, bold);
         font-size: var.$rem + 1;
+        color: var.$very-dark-blue;
       }
 
       p {
