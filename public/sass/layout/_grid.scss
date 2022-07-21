@@ -1,0 +1,5 @@
+@use "../utilities/index" as var;
+
+main {
+  @include var.grid;
+}

@@ -1,0 +1,15 @@
+@use "variables" as var;
+
+// grid
+@mixin grid {
+  display: grid;
+  grid-template: repeat(auto-fit, minmax(0, 1fr)) / none;
+  gap: var.$rem;
+}
+
+// flex
+@mixin flex ($justify-content){
+  display: flex;
+  align-items: center;
+  justify-content: $justify-content;
+}

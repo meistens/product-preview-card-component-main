@@ -1,0 +1,40 @@
+@use "../utilities/index" as var;
+
+main {
+  section {
+    &.grid-body {
+      padding: 0 var.$rem;
+
+      h1 {
+        font-family: var.$fraun;
+        font-weight: map-get(var.$weights, semi-bold);
+        font-size: var.$rem + 1;
+      }
+
+      p {
+        font-family: var.$montserat;
+        font-weight: map-get(var.$weights, bold);
+        margin-top: var.$rem;
+        line-height: 1.5;
+        color: var.$very-dark-blue;
+        opacity: 0.7;
+      }
+    }
+
+    &.price-grid {
+      padding: var.$rem 0;
+
+      h2 {
+        font-family: var.$fraun;
+        font-weight: map-get(var.$weights, semi-bold);
+        font-size: var.$rem + 1;
+        margin-right: var.$rem;
+        color: var.$dark-cyan;
+      }
+
+      span{
+        text-decoration: line-through;
+      }
+    }
+  }
+}

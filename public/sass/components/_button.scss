@@ -1,0 +1,17 @@
+@use "../utilities/index" as var;
+
+main{
+   a{
+      @include var.flex(center);
+      background: var.$dark-cyan;
+      margin-bottom: var.$rem + 0.5;
+      padding: var.$rem;
+      font-family: var.$montserat;
+      border-radius: var.$rem - 0.5;
+      font-weight: map-get(var.$weights, bold);
+      color: var.$white;
+      text-decoration: none;
+   }
+// add an acrtive state to the button
+
+}

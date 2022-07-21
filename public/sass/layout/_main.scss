@@ -1,0 +1,23 @@
+@use "../utilities/index" as var;
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var.$rem;
+  background-color: var.$cream;
+}
+
+main {
+  background-color: var.$white;
+  border-radius: var.$rem;
+  overflow: hidden;
+
+  // section picture img {
+  //   max-width: 100%;
+  // }
+  section img{
+    max-width: 100%;
+  }
+}
