@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+main section.grid-body {
+  padding: 0 1rem;
+}
+main section.grid-body h1, main section.grid-body p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin: 1rem 0;
+  line-height: 1.5;
+  color: hsl(212deg, 21%, 14%);
+  opacity: 0.7;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+main section.grid-body h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: hsl(212deg, 21%, 14%);
+}
+main section.grid-body p {
+  letter-spacing: normal;
+  text-transform: none;
+}
+main section.price-box {
+  padding: 1rem 0;
+}
+main section.price-box p {
+  font-family: "Fraunces", serif;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: hsl(158deg, 36%, 37%);
+  opacity: 1;
+}
+main section.price-box span {
+  text-decoration: line-through;
+}
+
+main a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: initial;
+  background: hsl(158deg, 36%, 37%);
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+  text-decoration: none;
+}
+main a:focus {
+  background-color: hsl(158deg, 38%, 21%);
+}
+main a:focus-visible {
+  border: 1px solid;
+}
+
+footer {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer a {
+  color: hsl(228deg, 45%, 44%);
+  text-decoration: none;
+  font-family: "Fraunces", serif;
+  color: hsl(212deg, 21%, 14%);
+}
+
+main {
+  display: grid;
+  grid-template: repeat(auto-fit, minmax(0, 1fr))/none;
+  gap: 1rem;
+}
+@media screen and (min-width: 37.5rem) {
+  main {
+    grid-template: none/repeat(auto-fit, minmax(0, 1fr));
+    gap: 0;
+    max-width: 37.5rem;
+  }
+}
+
+body {
+  min-height: 100vh;
+  padding: 1rem;
+  background-color: hsl(30deg, 38%, 92%);
+}
+@media screen and (min-width: 37.5rem) {
+  body {
+    padding: 0;
+  }
+}
+
+main {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+main section picture img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+  flex-direction: column;
+}
+@media screen and (min-width: 37.5rem) {
+  body {
+    align-items: center;
+  }
+}
+
+section.price-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: initial;
+  justify-content: initial;
+}
+@media screen and (min-width: 37.5rem) {
+  section.grid-body {
+    display: flex;
+    justify-content: center;
+    align-items: initial;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvdXRpbGl0aWVzL192YXJpYWJsZXMuc2NzcyIsIi4uL3Nhc3MvYmFzZS9fcmVzZXQuc2NzcyIsInN0eWxlLmNvbmNhdC5jc3MiLCIuLi9zYXNzL2Jhc2UvX3R5cG9ncmFwaHkuc2NzcyIsIi4uL3Nhc3MvY29tcG9uZW50cy9fYnV0dG9uLnNjc3MiLCIuLi9zYXNzL3V0aWxpdGllcy9fbWl4aW5zLnNjc3MiLCIuLi9zYXNzL2xheW91dC9fZm9vdGVyLnNjc3MiLCIuLi9zYXNzL2xheW91dC9fZ3JpZC5zY3NzIiwiLi4vc2Fzcy9sYXlvdXQvX21haW4uc2NzcyIsIi4uL3Nhc3MvbGF5b3V0L19mbGV4LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQVEsNEZBQUE7QUFDQSxrR0FBQTtBQ0RSOzs7Ozs7Ozs7Ozs7O0VBYUMsU0FBQTtFQUNBLFVBQUE7RUFDQSxTQUFBO0VBQ0EsZUFBQTtFQUNBLGFBQUE7RUFDQSx3QkFBQTtBQ0dEOztBRERBLGdEQUFBO0FBQ0E7O0VBRUMsY0FBQTtBQ0lEOztBREZBO0VBQ0MsY0FBQTtBQ0tEOztBREhBO0VBQ0MsZ0JBQUE7QUNNRDs7QURKQTtFQUNDLFlBQUE7QUNPRDs7QURMQTs7RUFFQyxXQUFBO0VBQ0EsYUFBQTtBQ1FEOztBRE5BO0VBQ0MseUJBQUE7RUFDQSxpQkFBQTtBQ1NEOztBQzlDSTtFQUNFLGVBQUE7QURpRE47QUMvQ007RUFDRSxxQ0hJSTtFR0hKLGdCQUFBO0VBQ0EsY0FBQTtFQUNBLGdCQUFBO0VBQ0EsNEJITlM7RUdPVCxZQUFBO0VBQ0Esc0JBQUE7RUFDQSx5QkFBQTtBRGlEUjtBQzlDTTtFQUNFLDhCSE5BO0VHT0EsZ0JBQUE7RUFDQSxlQUFBO0VBQ0EsNEJIaEJTO0FFZ0VqQjtBQzdDTTtFQVNBLHNCQUFBO0VBQ0Esb0JBQUE7QUR1Q047QUNuQ0k7RUFDRSxlQUFBO0FEcUNOO0FDbkNNO0VBQ0UsOEJIOUJBO0VHK0JBLGdCQUFBO0VBQ0EsZUFBQTtFQUNBLGtCSHhCRjtFR3lCRSw0QkgzQ0k7RUc0Q0osVUFBQTtBRHFDUjtBQ2xDTTtFQUNFLDZCQUFBO0FEb0NSOztBRXJGRTtFQ1FBLGFBQUE7RUFDQSx1QkFBQTtFQUNBLG1CRFRvQjtFQ1VwQix1QkRWNEI7RUFDMUIsaUNKRFE7RUlFUixxQkFBQTtFQUNBLGFKZUU7RUlkRixxQ0pJUTtFSUhSLHFCQUFBO0VBQ0EsZ0JBQUE7RUFDQSwwQkpKSTtFSUtKLHFCQUFBO0FGMkZKO0FFekZJO0VBQ0UsdUNKUEc7QUVrR1Q7QUV4Rkk7RUFDRSxpQkFBQTtBRjBGTjs7QUkzR0E7RUFDRSxlTm1CSTtFTWxCSixrQkFBQTtFQUNBLGdCTmlCSTtFTWhCSixxQ05NVTtBRXdHWjs7QUk1R0E7RUFDRSw0QkFBQTtFQUNBLHFCQUFBO0VBQ0EsOEJORU07RU1ETiw0Qk5OZTtBRXFIakI7O0FLekhBO0VGRUUsYUFBQTtFQUNBLG9EQUFBO0VBQ0EsU0xnQkk7QUUyR047QUc5R0U7RUVqQkY7SUFHSSxvREFBQTtJQUNBLE1BQUE7SUFDQSxrQlBpQlc7RUUrR2I7QUFDRjs7QU10SUE7RUFDRSxpQkFBQTtFQUNBLGFSa0JJO0VRakJKLHNDQUFBO0FOeUlGO0FHM0hFO0VHakJGO0lBTUksVUFBQTtFTjBJRjtBQUNGOztBTXZJQTtFQUNFLHFDUk5NO0VRT04sbUJSUUk7RVFQSixnQkFBQTtBTjBJRjtBTXhJRTtFQUNFLGVBQUE7RUFDQSxjQUFBO0FOMElKOztBTzNKQTtFSlNFLGFBQUE7RUFDQSx1QkFBQTtFQUNBLG1CSVZrQjtFSldsQixzQklYMEI7QVBpSzVCO0FHakpFO0VJakJGO0lBR0ksbUJBQUE7RVBtS0Y7QUFDRjs7QU9oS0U7RUpFQSxhQUFBO0VBQ0EsdUJBQUE7RUFDQSxtQklIb0I7RUpJcEIsdUJJSjRCO0VBQzFCLHdCQUFBO0FQc0tKO0FHOUpFO0VJTEE7SUpIQSxhQUFBO0lBQ0EsdUJBQUE7SUFDQSxvQklHc0I7SUpGdEIsc0JJRStCO0lBQzNCLDZCQUFBO0VQd0tKO0FBQ0YiLCJmaWxlIjoic3R5bGUucHJlZml4LmNzcyJ9 */
