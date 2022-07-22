@@ -1,0 +1,14 @@
+@use '../utilities/index' as var;
+
+footer {
+  font-size: var.$rem;
+  text-align: center;
+  margin-top: var.$rem;
+  font-family: var.$montserat;
+}
+footer a {
+  color: var.$footer;
+  text-decoration: none;
+  font-family: var.$fraun;
+  color: var.$very-dark-blue;
+}

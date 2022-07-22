@@ -1,20 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
 
 // colors
 $dark-cyan: hsl(158, 36%, 37%);
 $cream: hsl(30, 38%, 92%);
 $very-dark-blue: hsl(212, 21%, 14%);
 $white: hsl(0, 0%, 100%);
+$active: hsl(158, 38%, 21%);
+$footer: hsl(228, 45%, 44%);
 
 // font-family
-$montserat: 'Montserrat', sans-serif;
-$fraun: 'Fraunces', serif;
+$montserat: "Montserrat", sans-serif;
+$fraun: "Fraunces", serif;
 
 // weights map
 $weights: (
-   'semi-bold': 500,
-   'bold': 700
+  "semi-bold": 500,
+  "bold": 700,
 );
 
 // units

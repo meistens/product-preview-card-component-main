@@ -67,17 +67,17 @@ main section.grid-body p {
   color: hsl(212deg, 21%, 14%);
   opacity: 0.7;
 }
-main section.price-grid {
+main section.price-box {
   padding: 1rem 0;
 }
-main section.price-grid h2 {
+main section.price-box h2 {
   font-family: "Fraunces", serif;
   font-weight: 500;
   font-size: 2rem;
   margin-right: 1rem;
   color: hsl(158deg, 36%, 37%);
 }
-main section.price-grid span {
+main section.price-box span {
   text-decoration: line-through;
 }
 
@@ -96,10 +96,24 @@ main a {
   text-decoration: none;
 }
 main a:focus {
-  background-color: hsl(212deg, 21%, 14%);
+  background-color: hsl(158deg, 38%, 21%);
 }
-main a #text {
-  padding-left: 0.5rem;
+main a:focus-visible {
+  border: 1px solid;
+}
+
+footer {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer a {
+  color: hsl(228deg, 45%, 44%);
+  text-decoration: none;
+  font-family: "Fraunces", serif;
+  color: hsl(212deg, 21%, 14%);
 }
 
 main {
@@ -148,7 +162,7 @@ body {
   }
 }
 
-section.price-grid {
+section.price-box {
   display: flex;
   justify-content: center;
   align-items: center;

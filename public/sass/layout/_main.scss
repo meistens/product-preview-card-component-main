@@ -5,10 +5,9 @@ body {
   padding: var.$rem;
   background-color: var.$cream;
 
-  @include var.largePhone{
+  @include var.largePhone {
     padding: 0;
   }
-
 }
 
 main {
