@@ -36,8 +36,8 @@ The design is as close to the original. Some screen width of some recent devices
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://productpage-blue.vercel.app)
-- Live Site URL: [Add live site URL here](https://productpage-blue.vercel.app)
+- Solution URL: [Frontend mentor solution](https://www.frontendmentor.io/solutions/product-preview-card-component-using-sass-Hhrm8kMAIg)
+- Live Site URL: [Live site here](https://productpage-blue.vercel.app)
 
 ## My process
 
