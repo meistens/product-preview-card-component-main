@@ -5,7 +5,18 @@ main {
     &.grid-body {
       padding: 0 var.$rem;
 
-      h1 {
+      h1{
+        font-family: var.$montserat;
+        font-weight: map-get(var.$weights, bold);
+        margin: var.$rem 0;
+        line-height: 1.5;
+        color: var.$very-dark-blue;
+        opacity: 0.7;
+        letter-spacing: var.$rem - 0.5;
+        text-transform: uppercase;
+      }
+
+      h2 {
         font-family: var.$fraun;
         font-weight: map-get(var.$weights, bold);
         font-size: var.$rem + 1;
@@ -13,24 +24,29 @@ main {
       }
 
       p {
-        font-family: var.$montserat;
-        font-weight: map-get(var.$weights, bold);
-        margin-top: var.$rem;
-        line-height: 1.5;
-        color: var.$very-dark-blue;
-        opacity: 0.7;
+        // font-family: var.$montserat;
+        // font-weight: map-get(var.$weights, bold);
+        // margin-top: var.$rem;
+        // line-height: 1.5;
+        // color: var.$very-dark-blue;
+        // opacity: 0.7;
+
+      @extend h1;
+      letter-spacing: normal;
+      text-transform: none;
       }
     }
 
     &.price-box {
       padding: var.$rem 0;
 
-      h2 {
+      p {
         font-family: var.$fraun;
         font-weight: map-get(var.$weights, semi-bold);
         font-size: var.$rem + 1;
         margin-right: var.$rem;
         color: var.$dark-cyan;
+        opacity: 1;
       }
 
       span{
