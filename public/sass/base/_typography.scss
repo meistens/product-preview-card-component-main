@@ -2,36 +2,37 @@
 
 main {
   section {
+
+    h1{
+     position: absolute;
+     top: var.$rem - 10000;
+     left: var.$rem - 10000;
+
+    }
     &.grid-body {
       padding: 0 var.$rem;
 
-      h1{
+      h2{
         font-family: var.$montserat;
         font-weight: map-get(var.$weights, bold);
         margin: var.$rem 0;
         line-height: 1.5;
         color: var.$very-dark-blue;
-        opacity: 0.7;
+        opacity: 0.6;
         letter-spacing: var.$rem - 0.5;
         text-transform: uppercase;
       }
 
-      h2 {
+      h3 {
         font-family: var.$fraun;
         font-weight: map-get(var.$weights, bold);
         font-size: var.$rem + 1;
         color: var.$very-dark-blue;
+        opacity: 0.9;
       }
 
       p {
-        // font-family: var.$montserat;
-        // font-weight: map-get(var.$weights, bold);
-        // margin-top: var.$rem;
-        // line-height: 1.5;
-        // color: var.$very-dark-blue;
-        // opacity: 0.7;
-
-      @extend h1;
+      @extend h2;
       letter-spacing: normal;
       text-transform: none;
       }
@@ -40,7 +41,7 @@ main {
     &.price-box {
       padding: var.$rem 0;
 
-      p {
+      h4 {
         font-family: var.$fraun;
         font-weight: map-get(var.$weights, semi-bold);
         font-size: var.$rem + 1;
@@ -50,6 +51,7 @@ main {
       }
 
       span{
+        @extend p;
         text-decoration: line-through;
       }
     }

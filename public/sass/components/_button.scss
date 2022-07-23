@@ -12,11 +12,15 @@ main {
     color: var.$white;
     text-decoration: none;
 
+    img {
+      margin-right: var.$rem - 0.5;
+    }
+
     &:focus {
       background-color: var.$active;
     }
 
-    &:focus-visible{
+    &:focus-visible {
       border: 1px solid;
     }
   }
